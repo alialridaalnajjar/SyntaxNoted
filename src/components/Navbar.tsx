@@ -45,10 +45,11 @@ export default function Navbar() {
           <FaCoffee />
           <span className="hidden sm:inline">Afternoon Tea</span>
         </div>
+         <Link to="/ContactPage">
         <div className="flex items-center gap-3 bg-amber-500/80 hover:bg-amber-400 transition rounded-lg px-3 py-2 cursor-pointer shadow w-full">
           <FaEnvelope />
           <span className="hidden sm:inline">Contact</span>
-        </div>
+        </div></Link>
       </div>
     </nav>
   );

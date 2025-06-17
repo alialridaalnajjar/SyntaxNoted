@@ -1,54 +1,101 @@
-# React + TypeScript + Vite
+# Syntax Noted
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive notes and to-do app built with **React**, **TypeScript**, **Tailwind CSS**, and **Vite**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Note Taking:**  
+  Create, edit, and manage notes with a clean, modern UI.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **To-Do List:**  
+  Add, search, and delete tasks. Real-time filtering as you type.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **Responsive Design:**  
+  Works great on desktop and mobile.
+
+- **Visual Feedback:**  
+  Animations and highlights for actions like adding tasks.
+
+- **Navigation:**  
+  Sidebar navigation for quick access to Notes, To-Do, Events, and more.
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18+ recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+```bash
+git clone https://github.com/your-username/notesapp.git
+cd notesapp
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Running the App
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm run dev
 ```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
+## Project Structure
+
+```
+src/
+  components/
+    Navbar.tsx
+    Featured.tsx
+    ToDoComponents/
+      AddToDoCard.tsx
+      ToDoCard.tsx
+      ToDoListMain.tsx
+      ToDoListNavbar.tsx
+  data/
+    NotesCollection.ts
+  pages/
+    HomePage.tsx
+    NoteTakingPage.tsx
+    ToDoListPage.tsx
+  types/
+    NoteCardType.ts
+  App.tsx
+  main.tsx
+```
+
+---
+
+## Customization
+
+- **Styling:**  
+  Uses [Tailwind CSS](https://tailwindcss.com/) for utility-first styling.
+- **Icons:**  
+  Uses [react-icons](https://react-icons.github.io/react-icons/) for a modern look.
+
+---
+
+## Scripts
+
+- `npm run dev` – Start development server
+- `npm run build` – Build for production
+- `npm run preview` – Preview production build
+- `npm run lint` – Lint the codebase
+
+---
+
+## License
+
+MIT
+
+---
+
+**Made with ❤️ using React, TypeScript, and Tailwind CSS.**
