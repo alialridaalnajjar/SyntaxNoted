@@ -6,7 +6,7 @@ export default function Featured() {
 
 
   return (
-    <div className="bg-slate-800/80 h-screen w-full sm:w-1/2 md:w-1/3 lg:w-1/6  s  pt-10  rounded-tl-2xl shadow-lg shadow-black flex-col flex gap-3 p-1 ">
+    <div className="bg-slate-800/80 h-screen w-full sm:w-1/2 md:w-1/3 lg:w-1/6  s  pt-10  rounded-tl-2xl shadow-lg shadow-black flex-col flex gap-3 p-1 sm:p-4 md:p-6 lg:p-8">
       <h1 className="text-white text-xl font-semibold text-center">
         Welcome back!
       </h1>
