@@ -18,6 +18,7 @@ export default function HomePage() {
       {!hidden && <Featured />}
       {!hidden && <CloseFeatured sethidden={sethidden} />}
       {hidden && <OpenFeatured  sethidden={sethidden}/>}
+      testing things out here !!!! 
     </div>
   );
 }
